@@ -1,0 +1,22 @@
+CREATE TABLE shoes (
+    product_id INTEGER PRIMARY KEY, name TEXT, price           INTEGER, item_size TEXT , stock INTEGER);
+INSERT INTO shoes VALUES (1, "Vans OG", 500, 42, 500);
+INSERT INTO shoes VALUES (2, "Vans GOLFWANG", 670, 42, 450);
+INSERT INTO shoes VALUES (3, "Vans OS", 550, 42, 150);
+INSERT INTO shoes VALUES (4, "Vans HG", 450, 42, 350);
+INSERT INTO shoes VALUES (5, "Nike AJ", 500, 42, 550);
+INSERT INTO shoes VALUES (6, "Nike AB", 500, 42, 750);
+INSERT INTO shoes VALUES (7, "Nike SB", 500, 42, 150);
+INSERT INTO shoes VALUES (8, "Nike SKT", 500, 42, 550);
+INSERT INTO shoes VALUES (9, "Adidas RUN", 500, 42, 850);
+INSERT INTO shoes VALUES (10, "Adidas FB", 500, 42, 550);
+INSERT INTO shoes VALUES (11, "Adidas SC", 500, 42, 590);
+INSERT INTO shoes VALUES (12, "Adidas SKT", 500, 42, 850);
+INSERT INTO shoes VALUES (13, "Balenciaga R", 4500, 42, 350);
+INSERT INTO shoes VALUES (14, "Balenciaga A",3500, 42, 150);
+INSERT INTO shoes VALUES (15, "Balenciaga S", 2400, 42, 250);
+
+SELECT * FROM shoes
+WHERE name = "Vans GOLFWANG";
+
+SELECT SUM(stock) FROM shoes;
