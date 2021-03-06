@@ -165,12 +165,12 @@ FROM sales
 WHERE country IN ('United states', 'United Kingdom');
 */
 
-/*Return Discount by payment_type
+/*Return discounty by payment_type
 SELECT ID, name, payment_type, product, price, city, country,
 	CASE
 		WHEN payment_type = 'Mastercard' THEN 'Disc 10'
-        	WHEN payment_type = 'Visa' THEN 'Disc 25'
-        	ELSE 'Disc 50'
-		END AS Discount
-FROM sales
+        WHEN payment_type = 'Visa' THEN 'Disc 25'
+        ELSE 'Disc 50'
+	END AS Discount
+    FROM sales;
 */
