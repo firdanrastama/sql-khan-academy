@@ -1,0 +1,33 @@
+/*Think about your favorite apps, and pick one that stores your data- like a game 
+that stores scores, an app that lets you post updates, etc. 
+Now in this project, you're going to imagine that the app stores your data 
+in a SQL database (which is pretty likely!), and write SQL statements 
+that might look like their own SQL.
+CREATE a table to store the data.
+INSERT a few example rows in the table.
+Use an UPDATE to emulate what happens when you edit data in the app.
+Use a DELETE to emulate what happens when you delete data in the app.*/
+
+
+CREATE TABLE running_bud (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        name TEXT,
+        distance_km INTEGER, 
+        minutes INTEGER);
+
+INSERT INTO running_bud (name, distance_km, minutes) VALUES ('Alex', 5, 12);
+INSERT INTO running_bud (name, distance_km, minutes) VALUES ('Xander', 10, 50);
+INSERT INTO running_bud (name, distance_km, minutes) VALUES ('James', 25, 150);
+INSERT INTO running_bud (name, distance_km, minutes) VALUES ('Connor', 8, 17);
+
+UPDATE running_bud
+SET name = 'Jim'
+WHERE name = 'Xander';
+
+SELECT * FROM running_bud;
+
+DELETE FROM running_bud
+WHERE name = 'James';
+
+SELECT * FROM running_bud;
+
